@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>เว็บไซต์แนะนำร้านอาหาร</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Header
+    ========================== -->
+    <header class="header">
+
+        <div class="logo">
+            <h1>🍴 FoodFinder</h1>
+            <p>เว็บไซต์แนะนำร้านอาหาร</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">หน้าแรก</a>
+            <a href="#restaurants">ร้านอาหาร</a>
+            <a href="#categories">ประเภทอาหาร</a>
+            <a href="#about">เกี่ยวกับเรา</a>
+            <a href="#contact">ติดต่อ</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         Main
+    ========================== -->
+    <main>
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    🍽️ FIND YOUR FAVORITE FOOD
+                </span>
+
+                <h2>
+                    ค้นพบร้านอาหาร<br>
+                    <span>อร่อยที่ใช่สำหรับคุณ</span>
+                </h2>
+
+                <p>
+                    รวมร้านอาหารน่าสนใจ อาหารไทย อาหารญี่ปุ่น
+                    คาเฟ่ และร้านอาหารยอดนิยม
+                    ให้คุณค้นหาร้านที่ชอบได้ง่ายขึ้น
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button
+                        id="welcomeButton"
+                        class="btn btn-primary">
+                        ดูร้านอาหารแนะนำ
+                    </button>
+
+                    <a
+                        href="#about"
+                        class="btn btn-secondary">
+                        เกี่ยวกับเว็บไซต์
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <h2>🔎 ค้นหาร้านอาหาร</h2>
+
+                <p>
+                    พิมพ์ชื่อร้านหรือประเภทอาหารที่ต้องการ
+                </p>
+
+                <div class="search-form">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="เช่น อาหารไทย, คาเฟ่, อาหารญี่ปุ่น">
+
+                    <button
+                        id="searchButton"
+                        class="btn btn-primary">
+                        ค้นหา
+                    </button>
+
+                </div>
+
+                <p id="searchResult" class="search-result"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Restaurant -->
+        <section
+            id="restaurants"
+            class="restaurants section">
+
+            <div class="section-title">
+
+                <span>OUR RESTAURANTS</span>
+
+                <h2>ร้านอาหารแนะนำ</h2>
+
+                <p>
+                    เลือกร้านอาหารที่เหมาะกับคุณ
+                    จากร้านที่เราคัดสรรมาแนะนำ
+                </p>
+
+            </div>
+
+
+            <div class="restaurant-container">
+
+
+                <!-- Card 1 -->
+                <article
+                    class="restaurant-card"
+                    data-name="ร้านบ้านไทย"
+                    data-category="อาหารไทย">
+
+                    <div class="restaurant-image thai-image">
+
+                        <span class="restaurant-tag">
+                            ⭐ แนะนำ
+                        </span>
+
+                    </div>
+
+                    <div class="restaurant-info">
+
+                        <h3>ร้านบ้านไทย</h3>
+
+                        <p class="location">
+                            📍 กรุงเทพฯ
+                        </p>
+
+                        <p>
+                            ร้านอาหารไทยที่มีเมนู
+                            หลากหลาย รสชาติจัดจ้าน
+                            และเหมาะสำหรับครอบครัว
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.8/5</span>
+                        </div>
+
+                        <button
+                            class="restaurantButton"
+                            data-restaurant="ร้านบ้านไทย">
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 2 -->
+                <article
+                    class="restaurant-card"
+                    data-name="Tokyo Sushi"
+                    data-category="อาหารญี่ปุ่น">
+
+                    <div class="restaurant-image japanese-image">
+
+                        <span class="restaurant-tag">
+                            🍣 ยอดนิยม
+                        </span>
+
+                    </div>
+
+                    <div class="restaurant-info">
+
+                        <h3>Tokyo Sushi</h3>
+
+                        <p class="location">
+                            📍 กรุงเทพฯ
+                        </p>
+
+                        <p>
+                            ร้านอาหารญี่ปุ่น
+                            มีซูชิ ราเมง และเมนูญี่ปุ่น
+                            ให้เลือกหลากหลาย
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.7/5</span>
+                        </div>
+
+                        <button
+                            class="restaurantButton"
+                            data-restaurant="Tokyo Sushi">
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 3 -->
+                <article
+                    class="restaurant-card"
+                    data-name="Sweet Cafe"
+                    data-category="คาเฟ่">
+
+                    <div class="restaurant-image cafe-image">
+
+                        <span class="restaurant-tag">
+                            ☕ คาเฟ่
+                        </span>
+
+                    </div>
+
+                    <div class="restaurant-info">
+
+                        <h3>Sweet Cafe</h3>
+
+                        <p class="location">
+                            📍 นนทบุรี
+                        </p>
+
+                        <p>
+                            คาเฟ่บรรยากาศดี
+                            มีเครื่องดื่ม ขนม
+                            และมุมถ่ายรูปสวย ๆ
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.9/5</span>
+                        </div>
+
+                        <button
+                            class="restaurantButton"
+                            data-restaurant="Sweet Cafe">
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 4 -->
+                <article
+                    class="restaurant-card"
+                    data-name="ครัวริมคลอง"
+                    data-category="อาหารไทย">
+
+                    <div class="restaurant-image thai2-image">
+
+                        <span class="restaurant-tag">
+                            🥘 อาหารไทย
+                        </span>
+
+                    </div>
+
+                    <div class="restaurant-info">
+
+                        <h3>ครัวริมคลอง</h3>
+
+                        <p class="location">
+                            📍 นนทบุรี
+                        </p>
+
+                        <p>
+                            ร้านอาหารไทยบรรยากาศสบาย ๆ
+                            เหมาะสำหรับรับประทานอาหาร
+                            กับครอบครัว
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐☆
+                            <span>4.5/5</span>
+                        </div>
+
+                        <button
+                            class="restaurantButton"
+                            data-restaurant="ครัวริมคลอง">
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 5 -->
+                <article
+                    class="restaurant-card"
+                    data-name="Ramen House"
+                    data-category="อาหารญี่ปุ่น">
+
+                    <div class="restaurant-image ramen-image">
+
+                        <span class="restaurant-tag">
+                            🍜 ราเมง
+                        </span>
+
+                    </div>
+
+                    <div class="restaurant-info">
+
+                        <h3>Ramen House</h3>
+
+                        <p class="location">
+                            📍 กรุงเทพฯ
+                        </p>
+
+                        <p>
+                            ร้านราเมงสไตล์ญี่ปุ่น
+                            น้ำซุปเข้มข้นและมีเมนูให้เลือก
+                            หลายแบบ
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.6/5</span>
+                        </div>
+
+                        <button
+                            class="restaurantButton"
+                            data-restaurant="Ramen House">
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 6 -->
+                <article
+                    class="restaurant-card"
+                    data-name="Green Garden Cafe"
+                    data-category="คาเฟ่">
+
+                    <div class="restaurant-image cafe2-image">
+
+                        <span class="restaurant-tag">
+                            🌿 บรรยากาศดี
+                        </span>
+
+                    </div>
+
+                    <div class="restaurant-info">
+
+                        <h3>Green Garden Cafe</h3>
+
+                        <p class="location">
+                            📍 นนทบุรี
+                        </p>
+
+                        <p>
+                            คาเฟ่สไตล์ธรรมชาติ
+                            เหมาะสำหรับนั่งทำงาน
+                            และพักผ่อน
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.8/5</span>
+                        </div>
+
+                        <button
+                            class="restaurantButton"
+                            data-restaurant="Green Garden Cafe">
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Categories -->
+        <section
+            id="categories"
+            class="categories section">
+
+            <div class="section-title">
+
+                <span>FOOD CATEGORIES</span>
+
+                <h2>เลือกประเภทอาหาร</h2>
+
+                <p>
+                    ค้นหาร้านอาหารตามประเภทที่คุณชื่นชอบ
+                </p>
+
+            </div>
+
+
+            <div class="category-container">
+
+                <button
+                    class="category-card"
+                    data-category-filter="อาหารไทย">
+
+                    <span>🍛</span>
+                    <h3>อาหารไทย</h3>
+                    <p>อาหารไทยรสชาติจัดจ้าน</p>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category-filter="อาหารญี่ปุ่น">
+
+                    <span>🍣</span>
+                    <h3>อาหารญี่ปุ่น</h3>
+                    <p>ซูชิ ราเมง และอาหารญี่ปุ่น</p>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category-filter="คาเฟ่">
+
+                    <span>☕</span>
+                    <h3>คาเฟ่</h3>
+                    <p>เครื่องดื่ม ขนม และบรรยากาศดี</p>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section
+            id="about"
+            class="about section">
+
+            <div class="about-content">
+
+                <div class="section-title left">
+
+                    <span>ABOUT US</span>
+
+                    <h2>เกี่ยวกับ FoodFinder</h2>
+
+                </div>
+
+                <p>
+                    FoodFinder เป็นเว็บไซต์แนะนำร้านอาหาร
+                    ที่จัดทำขึ้นเพื่อช่วยให้ผู้ใช้งาน
+                    สามารถค้นหาร้านอาหารที่น่าสนใจ
+                    ได้ง่ายและรวดเร็ว
+                </p>
+
+                <p>
+                    เว็บไซต์รวบรวมข้อมูลร้านอาหารหลายประเภท
+                    เช่น อาหารไทย อาหารญี่ปุ่น และคาเฟ่
+                    พร้อมข้อมูลเบื้องต้นและคะแนนรีวิว
+                </p>
+
+                <div class="about-features">
+
+                    <div>
+                        <strong>50+</strong>
+                        <span>ร้านอาหาร</span>
+                    </div>
+
+                    <div>
+                        <strong>10+</strong>
+                        <span>ประเภทอาหาร</span>
+                    </div>
+
+                    <div>
+                        <strong>4.8</strong>
+                        <span>คะแนนเฉลี่ย</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section
+            id="contact"
+            class="contact section">
+
+            <div class="section-title">
+
+                <span>CONTACT US</span>
+
+                <h2>ติดต่อเรา</h2>
+
+                <p>
+                    มีข้อเสนอแนะหรือคำถาม
+                    สามารถส่งข้อความหาเราได้
+                </p>
+
+            </div>
+
+
+            <form
+                id="contactForm"
+                class="contact-form">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        ชื่อ
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="กรอกชื่อของคุณ"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        อีเมล
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="กรอกอีเมลของคุณ"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        ข้อความ
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="กรอกข้อความ"
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+                    ส่งข้อความ
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>🍴 FoodFinder</h2>
+
+                <p>
+                    เว็บไซต์แนะนำร้านอาหาร
+                    สำหรับคนรักการกิน
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>เมนู</h3>
+
+                <a href="#home">หน้าแรก</a>
+                <a href="#restaurants">ร้านอาหาร</a>
+                <a href="#categories">ประเภทอาหาร</a>
+                <a href="#about">เกี่ยวกับเรา</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>ติดต่อ</h3>
+
+                <p>📧 foodfinder@example.com</p>
+                <p>📞 02-000-0000</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 FoodFinder
+                | เว็บไซต์จัดทำเพื่อการศึกษา
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
